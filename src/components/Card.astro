@@ -1,6 +1,6 @@
 ---
 //src/components/Card.astro
-const {name, position, aboutMe, Proposal, linkedin, github, cvLink, profileImage } = Astro.props;
+const {name, position, aboutMe, Proposal, key, linkedin, github, cvLink, profileImage } = Astro.props;
 
 import '../styles/card.css';
 ---
@@ -12,6 +12,7 @@ import '../styles/card.css';
             <h2>{position}</h2>
             <p>{aboutMe}</p>
             <p>{Proposal}</p>
+            <p>{key}</p>
             </div>
         <div class="image">
             <img src={profileImage} alt="">
